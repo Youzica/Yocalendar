@@ -1,0 +1,7 @@
+/* pages/form/index.wxss */
+.form-Box{
+  margin:8px auto;
+}
+.van-cell {
+  margin-bottom: 5px;
+}

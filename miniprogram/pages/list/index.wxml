@@ -1,0 +1,9 @@
+<!--pages/list/index.wxml-->
+<van-tabs bind:click="onClick" color="#1989fa">
+  <van-tab title="代办事项"></van-tab>
+  <van-tab title="过期事项"></van-tab>
+</van-tabs>
+<van-cell-group inset style="--height--:{{bottom_height}}px;">
+  <van-cell wx:for="{{List}}" wx:for-item="item" wx:key="id" title="{{item.title}}" value="{{item.content}}" label="{{item.Time}}" />
+</van-cell-group>
+<!-- <view class="footer" style="--height--:{{bottom_height}}px;"></view> -->

@@ -1,0 +1,6 @@
+<!--pages/my/index.wxml-->
+<view class="my-Box">
+  <i-card title="{{title}}" full extra="更改信息>" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
+    <view slot="content">{{content}}</view>
+</i-card>
+</view>

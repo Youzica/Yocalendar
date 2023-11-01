@@ -1,0 +1,13 @@
+/* pages/list/index.wxss */
+.list-Box{
+  margin: 10px auto;
+}
+van-cell-group view{
+  margin-top: 8px;
+}
+.van-cell-group{
+  padding-bottom:var(--height--);
+}
+/* .footer{
+  height:var(--height--);
+} */

@@ -1,0 +1,15 @@
+<!--pages/form/index.wxml-->
+<view class="form-Box">
+  <form bindsubmit="formSubmit">
+    <van-cell-group>
+      <van-cell required title="选择时间" is-link bind:click="showPopup" />
+      <van-popup show="{{ show }}" position="bottom" custom-style="height: 35%;" bind:close="onClose">
+        <van-datetime-picker bind:confirm="onConfirm" type="time" value="{{ formData.remindTime }}" min-hour="{{ minHour }}" max-hour="{{ maxHour }}"/>
+      </van-popup>
+      <van-field label="时间" value="{{ formData.remindTime }}" disabled placeholder="请输入" border="{{ false }}" />
+      <van-field label="标题" required value="{{ formData.title }}" placeholder="请输入" border="{{ false }}" bind:change="onChange" data-name="title"/>
+      <van-field label="内容" required value="{{ formData.content }}" placeholder="请输入" border="{{ false }}" bind:change="onChange" data-name="content"/>
+    </van-cell-group>
+    <van-button block type="info" formType="submit">提交信息</van-button>
+  </form>
+</view>

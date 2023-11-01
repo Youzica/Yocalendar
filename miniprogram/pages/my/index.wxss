@@ -1,0 +1,4 @@
+/* pages/my/index.wxss */
+.my-Box{
+  margin:  auto;
+}

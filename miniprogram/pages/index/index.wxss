@@ -1,0 +1,12 @@
+.calendar {
+  --calendar-height: 455px;
+  --calendar-header-title-height: 20px;
+}
+
+.van-calendar {
+  margin-top: 10px;
+}
+
+.van-nav-bar__right {
+  color: #1989fa;
+}

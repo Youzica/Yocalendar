@@ -1,0 +1,11 @@
+<!-- <van-tabbar active="{{ selected }}" bindtap="onChange">
+  <van-tabbar-item icon="home-o">首页</van-tabbar-item>
+  <van-tabbar-item icon="search">列表</van-tabbar-item>
+  <van-tabbar-item icon="friends-o">我的</van-tabbar-item>
+</van-tabbar> -->
+
+<van-tabbar active="{{ active }}" bind:change="onChange">
+  <van-tabbar-item wx:for="{{ list }}" wx:key="index" icon="{{ item.icon }}"  >
+    {{item.text}}
+  </van-tabbar-item>
+</van-tabbar>

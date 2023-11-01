@@ -1,0 +1,3 @@
+.van-tabbar{
+  height: 48px;
+}

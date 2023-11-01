@@ -1,12 +1,9 @@
-# 云开发 quickstart
+# 注意事项
+1.使用了vant以及iview组件库，使用vant之前需要先构建npm，可以在网络上参考；
+2.iview组件库是以下载文件导入到项目中；到 GitHub 下载 iView Weapp 的代码，将 dist 目录拷贝到自己的项目中。
+https://github.com/TalkingData/iview-weapp
+将下载的dish文件夹放在与pages同级即可
 
-这是云开发的快速启动指引，其中演示了如何上手使用云开发的三大基础能力：
 
-- 数据库：一个既可在小程序前端操作，也能在云函数中读写的 JSON 文档型数据库
-- 文件存储：在小程序前端直接上传/下载云端文件，在云开发控制台可视化管理
-- 云函数：在云端运行的代码，微信私有协议天然鉴权，开发者只需编写业务逻辑代码
 
-## 参考文档
-
-- [云开发文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
 

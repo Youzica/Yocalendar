@@ -7,8 +7,8 @@ Page({
   data: {
     requestUrl: app.globalData.baseUrl,
     params: {
-      appid: 'wxdad78b793ffc1d03',
-      secret: '47fb51f35cd669d5caca1081991c68eb',
+      appid: 'APPID填写位置',
+      secret: '秘钥填写位置',
       access_token: '',
       openid: ''
     },

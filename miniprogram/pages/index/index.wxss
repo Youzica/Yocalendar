@@ -1,12 +1,13 @@
-.calendar {
-  --calendar-height: 455px;
-  --calendar-header-title-height: 20px;
+/* pages/list/index.wxss */
+.list-Box{
+  margin: 10px auto;
 }
-
-.van-calendar {
-  margin-top: 10px;
+van-cell-group view{
+  margin-top: 8px;
 }
-
-.van-nav-bar__right {
-  color: #1989fa;
+.van-cell-group{
+  padding-bottom:var(--height--); /* 接收变量 */
 }
+/* .footer{
+  height:var(--height--);
+} */

@@ -1,13 +1,49 @@
-/* pages/list/index.wxss */
-.list-Box{
-  margin: 10px auto;
+.body {
+  background: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(to top, #ffd1ff 90%, #fad0c4 100%);
 }
-van-cell-group view{
-  margin-top: 8px;
+
+.home-Box {
+  position: relative;
+  padding-bottom: 75px;
 }
-.van-cell-group{
-  padding-bottom:var(--height--); /* 接收变量 */
+
+.calendar {
+  --calendar-height: 600px;
+  --calendar-header-title-height: 120px;
 }
-/* .footer{
-  height:var(--height--);
-} */
+
+.van-calendar {
+  margin-top: 10px;
+  border-radius: 1em 1em 1em 1em;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.2),
+    0 15px 12px rgba(0, 0, 0, 0.2);
+}
+
+.van-calendar header {
+  border-radius: 1em 1em 0 0;
+  background: #e66b6b;
+  color: #fff;
+  /* padding: 3em 2em; */
+  background-image: url(https://s1.aigei.com/src/img/gif/fc/fc08f9e897094bd5ae29657fa183b441.gif?imageMogr2/auto-orient/thumbnail/!282x282r/gravity/Center/crop/282x282/quality/85/&e=1735488000&token=P7S2Xpzfz11vAkASLTkfHN7Fw-oOZBecqeJaxypL:YW70s72x5RSCm5O23LNL5woru5c=);
+  background-size: cover;
+}
+
+.van-calendar__header-subtitle {
+  font-size: 4em;
+  font-weight: 900;
+  line-height: 1em;
+}
+
+.van-calendar__weekdays {
+  /* color: #e66b6b; */
+  font-weight: 700;
+}
+
+.van-nav-bar__right {
+  color: #1989fa;
+}

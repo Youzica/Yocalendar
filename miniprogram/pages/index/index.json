@@ -1,9 +1,8 @@
 {
-  "enablePullDownRefresh": true,
   "usingComponents": {
-    "van-tab": "@vant/weapp/tab/index",
-    "van-tabs": "@vant/weapp/tabs/index",
-    "van-cell": "@vant/weapp/cell/index",
-    "van-cell-group": "@vant/weapp/cell-group/index"
+    "van-calendar": "@vant/weapp/calendar/index",
+    "van-nav-bar": "@vant/weapp/nav-bar/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-transition": "@vant/weapp/transition/index"
   }
 }

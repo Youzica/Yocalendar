@@ -1,10 +1,12 @@
-<!--pages/list/index.wxml-->
-<van-tabs bind:click="changeTitle" color="#1989fa">
-  <van-tab title="代办事项"></van-tab>
-  <van-tab title="过期事项"></van-tab>
-</van-tabs>
-<!-- 自定义wsxx变量 -->
-<van-cell-group inset style="--height--:{{bottom_height}}px;">
-  <van-cell wx:for="{{barIndex?outDateList:doList}}" wx:for-item="item" wx:key="id" title="{{item.title}}" value="{{item.content}}" label="{{item.Time}}" />
-</van-cell-group>
-<!-- <view class="footer" style="--height--:{{bottom_height}}px;"></view> -->
+<view class="body">
+  <view class="home-Box">
+    <!-- <van-nav-bar left-text="上个月" left-arrow bind:click-left="onClickLeft" bind:click-right="onClickRight">
+      <view slot="right"> <label for="">下个月</label>
+        <van-icon name="arrow" />
+      </view>
+    </van-nav-bar> -->
+    <van-transition show="{{show}}" custom-class="block" name="{{fadeName}}">
+      <van-calendar bind:touchstart="onStart" bind:touchmove="onMove" bind:touchend="onEnd" bind:select="onClickCalendar" title="" color="#1989fa" min-date="{{ minDate }}" max-date="{{ maxDate }}" poppable="{{ false }}" show-confirm="{{ false }}" class="calendar" />
+    </van-transition>
+  </view>
+</view>

@@ -58,7 +58,7 @@ Page({
         const { data } = res
         if (data.code === 0) {
           wx.requestSubscribeMessage({
-            tmplIds: ['ZYzF7z5fuRd5DwBncMyAoPUYXl-T62gTO3wYMLMeS4E'],
+            tmplIds: ['模板ID填写位置'],
             success: (res) => {
               console.log(res);
               wx.showToast({
